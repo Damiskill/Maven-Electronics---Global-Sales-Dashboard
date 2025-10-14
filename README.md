@@ -129,8 +129,6 @@ Revenue YoY % = DIVIDE([Total Revenue] - [Revenue LY], [Revenue LY])
 You can explore the full interactive report here:
 🔗 [Maven Electronics Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZDZmNmVkYTUtOWViMy00NDAyLWIzZmQtZTk5ODU0ZDZmYjIzIiwidCI6IjgxYzdiMWY1LWRhMmMtNGFiYy04YjhkLTFlZDA2NTVhYjE4NiJ9)
 
-
-
 ## 🧩 Future Enhancements
 
 * Add dynamic date filtering (e.g., “Last 12 Months”)
@@ -144,3 +142,12 @@ You can explore the full interactive report here:
 💼 [LinkedIn Profile](https://linkedin.com/in/PhilipEmmanuel)
 
 > “Data tells a story — dashboards make it visible.”
+
+#### More dashboard views:
+
+![Product Overview](https://github.com/Damiskill/Maven-Electronics---Global-Sales-Dashboard/blob/main/Products.png)
+
+![Customer Overview](https://github.com/Damiskill/Maven-Electronics---Global-Sales-Dashboard/blob/main/customer.png)
+
+![Store Overview](https://github.com/Damiskill/Maven-Electronics---Global-Sales-Dashboard/blob/main/Store.png)
+
