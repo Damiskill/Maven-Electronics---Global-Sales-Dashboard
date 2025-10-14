@@ -5,7 +5,7 @@ This is a sales performance dashboard for a global electronics retailer to conso
 
 An interactive **Power BI executive dashboard** built to analyze global sales, customer behavior, product performance, and store trends for *Maven Electronics* — a multinational retailer of consumer electronics.
 
-![Dashboard Preview](https://drive.google.com/uc?id=1PkDlfVU7tFyJgcXogox0FmctJEZph4dG)
+![Dashboard Preview](https://github.com/Damiskill/Maven-Electronics---Global-Sales-Dashboard/blob/main/sales.png)
 
 ## 🧭 Project Overview
 
