@@ -1,16 +1,11 @@
 # Maven-Electronics---Global-Sales-Dashboard
 This is a sales performance dashboard for a global electronics retailer to consolidate and analyze sales, customer, product, and store data. The dashboard tracks key performance metrics, uncover sales trends, and provide actionable insights for management to make data-driven decisions.
 
----
-
-```markdown
 # 📊 Maven Electronics – Global Sales Dashboard (Power BI)
 
 An interactive **Power BI executive dashboard** built to analyze global sales, customer behavior, product performance, and store trends for *Maven Electronics* — a multinational retailer of consumer electronics.
 
-![Dashboard Preview](./images/dashboard_preview.png)
-
----
+![Dashboard Preview](https://drive.google.com/uc?id=1PkDlfVU7tFyJgcXogox0FmctJEZph4dG)
 
 ## 🧭 Project Overview
 
@@ -23,8 +18,6 @@ This project consolidates multiple datasets (Sales, Customers, Products, Stores,
 - Analyze customer demographics and buying patterns
 - Compare YoY and seasonal trends to uncover growth opportunities
 
----
-
 ## 🗂️ Dataset Description
 
 | Table | Description |
@@ -35,11 +28,7 @@ This project consolidates multiple datasets (Sales, Customers, Products, Stores,
 | **Stores** | Store locations, sizes, and open dates |
 | **Exchange Rates** | Daily currency-to-USD rates for consistent reporting |
 
----
-
 ## 🧱 Data Model (Star Schema)
-
-```
 
 Sales (Fact)
 │
@@ -48,11 +37,7 @@ Sales (Fact)
 ├── Stores (Dim)
 └── Exchange Rates (Support)
 
-````
-
 Relationships are built via foreign keys (`CustomerKey`, `ProductKey`, `StoreKey`).
-
----
 
 ## ⚙️ Project Stages
 
@@ -60,62 +45,45 @@ Relationships are built via foreign keys (`CustomerKey`, `ProductKey`, `StoreKey
 - Removed nulls, duplicates, and invalid data (e.g., postal codes, missing dates)
 - Converted data types (Date, Currency, Numbers)
 - Created calculated columns:
-  ```DAX
   StoreAgeYears = DATEDIFF(Stores[Open Date], TODAY(), YEAR)
-````
-
----
 
 ### **2️⃣ Data Modeling**
 
 * Established **one-to-many** relationships between dimension tables and the Sales fact table
 * Applied proper cardinality and referential integrity for consistent aggregation
 
----
-
 ### **3️⃣ Measure Development (DAX Formulas)**
 
 **Performance KPIs**
 
-```DAX
 Total Revenue = SUM(Sales[Quantity] * RELATED(Products[Unit Price USD]))
 Total Cost = SUM(Sales[Quantity] * RELATED(Products[Unit Cost USD]))
 Total Profit = [Total Revenue] - [Total Cost]
 Profit Margin % = DIVIDE([Total Profit], [Total Revenue])
-```
 
 **Customer Metrics**
 
-```DAX
 Unique Customers = DISTINCTCOUNT(Sales[CustomerKey])
 Customer Growth % = DIVIDE([Unique Customers] - [Unique Customers LY], [Unique Customers LY])
-```
 
 **Product Metrics**
 
-```DAX
 Unique Brands = DISTINCTCOUNT(Products[Brand])
 Unique Categories = DISTINCTCOUNT(Products[Category])
 Unique Subcategories = DISTINCTCOUNT(Products[Subcategory])
 Total Products = COUNTROWS(Products)
-```
 
 **Store Metrics**
 
-```DAX
 Total Stores = COUNTROWS(Stores)
 Avg Store Size = AVERAGE(Stores[Square Meters])
 Revenue per Store = DIVIDE([Total Revenue], [Total Stores])
-```
 
 **Trend & YoY**
 
-```DAX
 Revenue LY = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR(Dates[Date]))
 Revenue YoY % = DIVIDE([Total Revenue] - [Revenue LY], [Revenue LY])
-```
 
----
 
 ### **4️⃣ Visualization & Dashboard Design**
 
@@ -140,8 +108,6 @@ Revenue YoY % = DIVIDE([Total Revenue] - [Revenue LY], [Revenue LY])
 * Revenue per m² (KPI)
 * Open Date Impact (Line Trend)
 
----
-
 ## 📈 Key Insights
 
 * Revenue grew from **$6.85M (2016)** to **$18.31M (2019)** before halving in **2020 ($9.32M)**
@@ -151,8 +117,6 @@ Revenue YoY % = DIVIDE([Total Revenue] - [Revenue LY], [Revenue LY])
 * Older stores contributed **higher revenue per square meter**
 * Most profitable segments: **Computers and Smartphones**
 
----
-
 ## 💡 Tools & Skills Demonstrated
 
 * **Power BI** – Data modeling, DAX measures, interactive visuals, and navigation buttons
@@ -160,14 +124,12 @@ Revenue YoY % = DIVIDE([Total Revenue] - [Revenue LY], [Revenue LY])
 * **Data Storytelling** – Insight extraction and executive-level reporting
 * **Data Modeling** – Star schema design and performance optimization
 
----
-
 ## 🚀 How to View the Dashboard
 
 You can explore the full interactive report here:
 🔗 [Maven Electronics Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZDZmNmVkYTUtOWViMy00NDAyLWIzZmQtZTk5ODU0ZDZmYjIzIiwidCI6IjgxYzdiMWY1LWRhMmMtNGFiYy04YjhkLTFlZDA2NTVhYjE4NiJ9)
 
----
+
 
 ## 🧩 Future Enhancements
 
@@ -175,18 +137,10 @@ You can explore the full interactive report here:
 * Integrate real-time data from SQL database
 * Create drill-through pages for store-level deep dives
 
----
-
 ## ✍️ Author
 
 **Emmanuel Philip**
 📧 [emmanuelphilip685d@gmail.com]
 💼 [LinkedIn Profile](https://linkedin.com/in/PhilipEmmanuel)
 
----
-
 > “Data tells a story — dashboards make it visible.”
-
-```
-
----
