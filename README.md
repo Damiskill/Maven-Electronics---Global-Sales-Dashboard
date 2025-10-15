@@ -1,3 +1,10 @@
+[![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)]()
+[![Data Analysis](https://img.shields.io/badge/Data%20Analysis-Analytics-blue?style=flat-square)]()
+[![Dashboard](https://img.shields.io/badge/Dashboard-Visualization-orange?style=flat-square)]()
+[![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)]()
+[![Made with ❤️ by Damiskill](https://img.shields.io/badge/Made%20with-❤️%20by%20Damiskill-critical?style=flat-square)]()
+
+
 # Maven-Electronics---Global-Sales-Dashboard
 This is a sales performance dashboard for a global electronics retailer to consolidate and analyze sales, customer, product, and store data. The dashboard tracks key performance metrics, uncover sales trends, and provide actionable insights for management to make data-driven decisions.
 
@@ -151,3 +158,5 @@ You can explore the full interactive report here:
 
 ![Store Overview](https://github.com/Damiskill/Maven-Electronics---Global-Sales-Dashboard/blob/main/Store.png)
 
+
+⭐ **If you found this project helpful, please consider giving it a star on GitHub!**
